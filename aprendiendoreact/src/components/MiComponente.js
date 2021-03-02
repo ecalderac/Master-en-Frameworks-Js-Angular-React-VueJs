@@ -17,6 +17,12 @@ class MiComponente extends Component {
             return <li key={i}>{ingrediente}</li>;
           })}
         </ol>
+        {this.props.saludo && (
+          <React.Fragment>
+            <h1>Desde una prop: </h1>
+            <h3>{this.props.saludo}</h3>
+          </React.Fragment>
+        )}
       </div>
       /*
       <React.Fragment>
